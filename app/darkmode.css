@@ -1,0 +1,13 @@
+canvas{
+ 
+    background: rgb(48, 25, 58) !important;
+    background: linear-gradient(
+      111deg,
+      rgba(48, 25, 58, 1) 0%,
+      rgba(37, 21, 42, 1) 17%,
+      rgba(0, 0, 0, 1) 49%, /* Dark background */
+      rgba(16, 8, 20, 1) 82%, /* Darker background */
+      rgba(29, 16, 38, 1) 100% /* Darkest background */
+    ) !important  ;
+  
+  }
