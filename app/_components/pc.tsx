@@ -30,7 +30,7 @@ type ContextType = Record<string, React.ForwardRefExoticComponent<JSX.IntrinsicE
 export function Pc(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/3dmodels/ibm_3178.glb') as GLTFResult
   return (
-    <group {...props} dispose={null} position-y={-0.5} scale={0.2}>
+    <group {...props} dispose={null} position-y={-1.2} scale={0.2}>
       <group rotation={[-Math.PI / 2.5, -0.1, -0.6]}>
         <mesh  raycast={meshBounds} geometry={nodes.ibm_3178_0.geometry} material={materials.ibm_3178} />
         <mesh  raycast={meshBounds} geometry={nodes.ibm_3178_1.geometry} material={materials.ibm_3178_keyboard} />

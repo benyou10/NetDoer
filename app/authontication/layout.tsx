@@ -1,6 +1,6 @@
 import Authontication from "../_components/authontication"
 
-export default function DashboardLayout({
+export default function AuthLayout({
     children,
   }: {
     children: React.ReactNode

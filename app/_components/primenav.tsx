@@ -29,7 +29,7 @@ settheme(!theme)
           <div className="flex mr-4 items-center">
             <Link
               className="inline-block px-2 py-2  md:px-3 hover:bg-gray-200 rounded-full"
-              href="/tutorials"
+              href="/camp/tutorials"
             >
               <div className="flex items-center relative cursor-pointer whitespace-nowrap">
                 tutorials
