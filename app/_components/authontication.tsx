@@ -5,7 +5,7 @@ import Cube from './Cube';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { PresentationControls } from '@react-three/drei';
 
-const Authontication = (props) => {
+const Authontication = (props : any) => {
 
     const [showpass, setShowPass] = useState(false)
 const {children}=props;
@@ -13,10 +13,10 @@ const {children}=props;
     <>
    <>
   {/* component */}
-  <div className="bg-white dark:bg-gray-900">
+  <div className="bg-white text-xl dark:bg-gray-900">
     <div className="flex justify-center h-screen">
       <div
-        className="hidden bg-cover lg:block lg:w-2/3"
+        className="hidden  bg-cover lg:block lg:w-1/3"
        
       >
        <div>
@@ -32,7 +32,7 @@ const {children}=props;
             </Canvas>
         </div>
       </div>
-      <div className="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
+      <div className="flex items-center  w-full max-w-md px-6 mx-auto lg:w-3/6">
         <div className="flex-1">
           {children}
         </div>

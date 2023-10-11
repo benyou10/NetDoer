@@ -7,7 +7,7 @@ const page = () => {
 
   return (<><div className="text-center">
   <h2 className="text-4xl font-bold text-center text-gray-700 dark:text-white">
-    Brand
+  NetDoer
   </h2>
   <p className="mt-3 text-gray-500 dark:text-gray-300">
     Sign in to access your account
@@ -18,7 +18,7 @@ const page = () => {
     <div>
       <label
         htmlFor="email"
-        className="block mb-2 text-sm text-gray-600 dark:text-gray-200"
+        className="block mb-2 text-2xl text-gray-600 dark:text-gray-200"
       >
         Email Address
       </label>
@@ -34,13 +34,13 @@ const page = () => {
       <div className="flex justify-between mb-2">
         <label
           htmlFor="password"
-          className="text-sm text-gray-600 dark:text-gray-200"
+          className="text-2xl text-gray-600 dark:text-gray-200"
         >
           Password
         </label>
         <a
           href="#"
-          className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
+          className="text-2xl text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline"
         >
           Forgot password?
         </a>
@@ -59,7 +59,7 @@ const page = () => {
       </button>
     </div>
   </form>
-  <p className="mt-6 text-sm text-center text-gray-400">
+  <p className="mt-6 text-2xl text-center text-gray-400">
     Don't have an account yet?{" "}
     <Link
       href="./signup"
