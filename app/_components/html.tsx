@@ -5,7 +5,7 @@ import 'app/globals.css'
 import Primenav from './primenav'
 import About from './home'
 
-const Content = (props) => {
+const Content = (props : any) => {
   const {theme,settheme}=props;
 
   return (

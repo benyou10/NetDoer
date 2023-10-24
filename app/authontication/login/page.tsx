@@ -1,9 +1,7 @@
 'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
 
-const page = () => {
-    const [showpass, setShowPass] = useState(false)
+const Page = () => {
 
   return (<><div className="text-center">
   <h2 className="text-4xl font-bold text-center text-gray-700 dark:text-white">
@@ -60,7 +58,7 @@ const page = () => {
     </div>
   </form>
   <p className="mt-6 text-2xl text-center text-gray-400">
-    Don't have an account yet?{" "}
+    Don&apos;t have an account yet?{" "}
     <Link
       href="./signup"
       className="text-blue-500 focus:outline-none focus:underline hover:underline"
@@ -73,4 +71,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -3,8 +3,7 @@ import { signIn } from 'next-auth/react'
 import Link from 'next/link'
 import { stringify } from 'querystring'
 import React, { useState } from 'react'
-const page = () => {
-    const [showpass, setShowPass] = useState(false)
+const Page = () => {
     const [email, setEmail] = useState('')
 
     const [password, setPassword] = useState('')
@@ -102,4 +101,4 @@ if(res.ok){
   )
 }
 
-export default page
+export default Page

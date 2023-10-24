@@ -4,8 +4,9 @@ import { Canvas } from '@react-three/fiber';
 import { Board } from './board';
 import { PresentationControls, SpotLight } from '@react-three/drei';
 import WindowBoard from './windowBoard';
+import Image from 'next/image';
 
-function Section(props) {
+function Section(props : any) {
   const { children } = props;
   return (
     <motion.section className={`
@@ -30,7 +31,7 @@ function Section(props) {
   );
 }
 
-const About = (props) => {
+const About = (props :any) => {
   const {theme}=props;
  
   return (
@@ -140,7 +141,7 @@ const About = (props) => {
         {/* Grid */}
         <div className="grid grid-cols-12 gap-2 sm:gap-6 items-center lg:-translate-x-10">
           <div className="col-span-4">
-            <img
+            <Image
               className="rounded-xl"
               src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80"
               alt="Image Description"
@@ -148,7 +149,7 @@ const About = (props) => {
           </div>
           {/* End Col */}
           <div className="col-span-3">
-            <img
+            <Image
               className="rounded-xl"
               src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
               alt="Image Description"
@@ -156,7 +157,7 @@ const About = (props) => {
           </div>
           {/* End Col */}
           <div className="col-span-5">
-            <img
+            <Image
               className="rounded-xl"
               src="https://images.unsplash.com/photo-1600194992440-50b26e0a0309?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
               alt="Image Description"
@@ -385,7 +386,7 @@ const About = (props) => {
         {/* Card */}
         <a className="group relative block rounded-xl overflow-hidden" href="#">
           <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-            <img
+            <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3481&q=80"
               alt="Image Description"
@@ -404,7 +405,7 @@ const About = (props) => {
         {/* Card */}
         <a className="group relative block rounded-xl overflow-hidden" href="#">
           <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-            <img
+            <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
               alt="Image Description"
@@ -423,7 +424,7 @@ const About = (props) => {
         {/* Card */}
         <a className="group relative block rounded-xl overflow-hidden" href="#">
           <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-            <img
+            <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
               alt="Image Description"
@@ -442,7 +443,7 @@ const About = (props) => {
         {/* Card */}
         <a className="group relative block rounded-xl overflow-hidden" href="#">
           <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-            <img
+            <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
               alt="Image Description"
@@ -461,7 +462,7 @@ const About = (props) => {
         {/* Card */}
         <a className="group relative block rounded-xl overflow-hidden" href="#">
           <div className="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden">
-            <img
+            <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1019&q=80"
               alt="Image Description"
@@ -685,7 +686,7 @@ const About = (props) => {
             Careers
           </a>{" "}
           <span className="inline text-blue-600 dark:text-blue-500">
-            — We're hiring
+            — We &apos; re hiring
           </span>
         </p>
         <p>
@@ -749,7 +750,7 @@ const About = (props) => {
             className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
             href="#"
           >
-            What's New
+            What &apos; s New
           </a>
         </p>
         <p>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
@@ -41,9 +42,9 @@ const page = () => {
                 id="type1"
                 
               />
-              <img
+              <Image
                 src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png"
-                className="h-8 ml-3"
+                className="h-8 ml-3"  alt='g'
               />
             </label>
           </div>
@@ -55,9 +56,10 @@ const page = () => {
                 name="type"
                 id="type2"
               />
-              <img
+              <Image
                 src="https://www.sketchappsources.com/resources/source-image/PayPalCard.png"
                 className="h-8 ml-3"
+                alt='g'
               />
             </label>
           </div>
@@ -130,9 +132,9 @@ const page = () => {
           target="_blank"
           className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
         >
-          <img
+          <Image
             className="object-cover object-center w-full h-full rounded-full"
-            src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg"
+            src="https://i.pinimg.com/originals/60/fd/e8/60fde811b6be57094e0abc69d9c2622a.jpg" alt='jj'
           />
         </a>
       </div>
