@@ -12,7 +12,7 @@ settheme(!theme)
     <div className='w-[100vw] h-[100vh]'>
     {/* component */}
     <div className={`    absolute top-[85%] left-[5%] right-[5%]  xl:left-[20%] xl:right-[20%]`} >
-     <nav className={` ${theme ==true ? 'bg-white ':'bg-darkblue  text-white' } border-2 border-white  w-full flex rounded-full   justify-between items-center  md:pl-10 pr-40 h-20`}>
+     <nav className={` ${theme ==true ? 'bg-lightnav':'bg-darkblue  text-white' } border-2 border-white  w-full flex rounded-full   justify-between items-center  md:pl-10 pr-40 h-20`}>
        <Link className='bg-white rounded-xl ' href='/'>
       {/* logo */}<Image  className="inline-flex"
             src={'Group 286.svg'}

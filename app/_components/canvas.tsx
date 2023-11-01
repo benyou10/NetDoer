@@ -10,7 +10,7 @@ import { Board } from './board'
 
 const CanvasPage = (  ) => {
 
-const [theme,settheme]=useState(true)
+const [theme,settheme]=useState(false)
   
   return (
     <div> 

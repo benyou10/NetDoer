@@ -5,7 +5,7 @@ export default function DashboardLayout({
   }: {
     children: React.ReactNode
   }) {
-    return <div className=" w-full min-h-[100vh] bg-[conic-gradient(at_bottom,_var(--tw-gradient-stops))] from-red-300 via-cyan-900 to-rose-100">
+    return <div className=" w-full min-h-[100vh] bg-sc">
     
     <Dashnav/>
     {children}</div>

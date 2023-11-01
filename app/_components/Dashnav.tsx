@@ -5,20 +5,66 @@ const Dashnav = () => {
   return (
     <div><>
     {/* ========== HEADER ========== */}
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full conic-gradient(at 50% 100%, rgb(255, 228, 230), rgb(22, 78, 99), rgb(252, 165, 165)) border-b border-gray-700 text-sm py-2.5 sm:py-4">
+    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-darkgray border-b border-gray-700 text-sm py-1.5 sm:py-[0.5px]">
       <nav
         className="max-w-[85rem] flex basis-full items-center w-full mx-auto px-4 sm:px-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="mr-5 md:mr-8">
-          <Link
-            className="flex-none text-xl font-semibold text-black"
-            href="../"
-            aria-label="Brand"
-          >
-            NetDoer
-          </Link>
+      <main id="content" role="main">
+      {/* Nav */}
+      <nav
+        className="sticky  items-center -top-px  text-sm font-medium text-black ring-1 ring-gray-900 ring-opacity-5  shadow-sm pt-6 md:pb-6 -mt-px "
+        aria-label="Jump links"
+      >
+        <div className="max-w-7xl snap-x w-full flex justify-start sm:justify-center items-center overflow-x-auto scrollbar-x px-4 sm:px-6 lg:px-8 pb-4 md:pb-0 mx-auto dark:scrollbar-x">
+          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last-pr-0">
+            <Link
+              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
+              href="tutorials"
+            >
+              tutorials
+            </Link>
+          </div>
+          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last:pr-0">
+            <Link
+              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
+              href="blogs"
+            >
+              blogs
+            </Link>
+          </div>
+          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last:pr-0">
+            <Link
+              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
+              href="premuim"
+            >
+              premuim
+            </Link>
+          </div>
+          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last:pr-0">
+            <Link
+              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
+              href="donate"
+            >
+              Donate
+            </Link>
+          </div>
+          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last:pr-0">
+            <Link
+              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
+              href="curiculam"
+            >
+              Curiculam
+            </Link>
+          </div>
+         
         </div>
+      </nav>
+      {/* End Nav */}
+     
+        {/* End Page Heading */}
+     
+    </main>
         <div className="w-full flex items-center justify-end ml-auto sm:justify-between sm:gap-x-3 sm:order-3">
           <div className="sm:hidden">
             <button
@@ -112,6 +158,7 @@ const Dashnav = () => {
                   className="inline-block h-[2.375rem] w-[2.375rem] rounded-full"
                   src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
                   alt="Image Description"
+                  width={100}height={100}
                 />
               </button>
               <div
@@ -201,61 +248,7 @@ const Dashnav = () => {
     </header>
     {/* ========== END HEADER ========== */}
     {/* ========== MAIN CONTENT ========== */}
-    <main id="content" role="main">
-      {/* Nav */}
-      <nav
-        className="sticky  items-center -top-px bg-white text-sm font-medium text-black ring-1 ring-gray-900 ring-opacity-5 border-t shadow-sm shadow-gray-100 pt-6 md:pb-6 -mt-px "
-        aria-label="Jump links"
-      >
-        <div className="max-w-7xl snap-x w-full flex justify-start sm:justify-center items-center overflow-x-auto scrollbar-x px-4 sm:px-6 lg:px-8 pb-4 md:pb-0 mx-auto dark:scrollbar-x">
-          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last-pr-0">
-            <Link
-              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
-              href="tutorials"
-            >
-              tutorials
-            </Link>
-          </div>
-          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last:pr-0">
-            <Link
-              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
-              href="blogs"
-            >
-              blogs
-            </Link>
-          </div>
-          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last:pr-0">
-            <Link
-              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
-              href="premuim"
-            >
-              premuim
-            </Link>
-          </div>
-          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last:pr-0">
-            <Link
-              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
-              href="donate"
-            >
-              Donate
-            </Link>
-          </div>
-          <div className="snap-center shrink-0 pr-5 sm:pr-8 sm:last:pr-0">
-            <Link
-              className="inline-flex items-center gap-x-2 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-500"
-              href="curiculam"
-            >
-              Curiculam
-            </Link>
-          </div>
-         
-        </div>
-      </nav>
-      {/* End Nav */}
-     
-        {/* End Page Heading */}
-     
-    </main>
+  
     {/* ========== END MAIN CONTENT ========== */}
     {/* ========== SECONDARY CONTENT ========== */}
     <div

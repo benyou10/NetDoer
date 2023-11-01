@@ -9,6 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors:{
+        darktbluetext:"#2D033B",
+        lightbluetext:"#A5D7E8",
+        containerlight:"#FFF6F6",
+        lightnav:'#FFDFDF',
+        sc:'#445069',
+        darkgray:'#252B48',
 darkblue:'#0f172a',
 textcolor:'#134775'
       },

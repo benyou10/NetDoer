@@ -38,7 +38,7 @@ const About = (props :any) => {
     <>
 
  <div className='relative w-[100vw] top-0'>
-  <div className={` border-1 border-white w-full rounded-xl absolute top-[1vh] h-[600vh] ${theme ==true ? 'bg-white ':'bg-darkblue  text-white' }`}>
+  <div className={` border-1 border-white w-full rounded-xl absolute top-[1vh] h-[600vh] ${theme ==true ? 'bg-containerlight ':'bg-darkblue  text-white' }`}>
  
 <>
 <Section>
@@ -53,11 +53,11 @@ const About = (props :any) => {
         >
           Explore more about the founder
           <span className="flex items-center gap-x-1">
-            <span className="border-l border-gray-200 text-blue-500">
+            <span className="border-l border-gray-200 text-lightbluetext">
               Explore
             </span>
             <svg
-              className="w-2.5 h-2.5 text-blue-500"
+              className="w-2.5 h-2.5 text-lightbluetext"
               width={16}
               height={16}
               viewBox="0 0 16 16"
@@ -76,7 +76,7 @@ const About = (props :any) => {
       {/* End Announcement Banner */}
       {/* Title */}
       <div className="mt-5 max-w-xl text-center mx-auto">
-        <h1 className="block font-bold text-4xl md:text-5xl lg:text-6xl text-blue-500">
+        <h1 className="block font-bold text-4xl md:text-5xl lg:text-6xl text-lightbluetext">
           Embrace Knowledge in computer science
         </h1>
       </div>
@@ -107,24 +107,7 @@ const About = (props :any) => {
           Continue with Github
         </a>
       </div>
-      <div className="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center">
-        <a
-          className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800"
-          href="#"
-        >
-          <svg
-            className="w-4.5 h-4.5"
-            xmlns="http://www.w3.org/2000/svg"
-            width={16}
-            height={16}
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
-          Continue with Github
-        </a>
-      </div>
+  
       {/* End Buttons */}
     </div>
   </div>
@@ -144,7 +127,7 @@ const About = (props :any) => {
             <Image
               className="rounded-xl"
               src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80"
-              alt="Image Description"
+              alt="Image Description"  width={100}height={100}
             />
           </div>
           {/* End Col */}
@@ -152,7 +135,7 @@ const About = (props :any) => {
             <Image
               className="rounded-xl"
               src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-              alt="Image Description"
+              alt="Image Description"  width={100}height={100}
             />
           </div>
           {/* End Col */}
@@ -160,7 +143,7 @@ const About = (props :any) => {
             <Image
               className="rounded-xl"
               src="https://images.unsplash.com/photo-1600194992440-50b26e0a0309?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-              alt="Image Description"
+              alt="Image Description" width={100}height={100}
             />
           </div>
           {/* End Col */}
@@ -172,7 +155,7 @@ const About = (props :any) => {
         <div className="space-y-6 sm:space-y-8">
           {/* Title */}
           <div className="space-y-2 md:space-y-4">
-            <h2 className="font-bold text-3xl lg:text-4xl text-blue-500">
+            <h2 className="font-bold text-3xl lg:text-4xl text-lightbluetext">
               seak knowledge reading blogs or join us and create your own blogs
             </h2>
             <p className="text-gray-500">
@@ -186,7 +169,7 @@ const About = (props :any) => {
             <li className="flex space-x-3">
               {/* Solid Check */}
               <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-lightbluetext"
                 width={16}
                 height={16}
                 viewBox="0 0 16 16"
@@ -212,7 +195,7 @@ const About = (props :any) => {
             <li className="flex space-x-3">
               {/* Solid Check */}
               <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-lightbluetext"
                 width={16}
                 height={16}
                 viewBox="0 0 16 16"
@@ -237,7 +220,7 @@ const About = (props :any) => {
             <li className="flex space-x-3">
               {/* Solid Check */}
               <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-lightbluetext"
                 width={16}
                 height={16}
                 viewBox="0 0 16 16"
@@ -283,7 +266,7 @@ const About = (props :any) => {
         <div className="space-y-6 sm:space-y-8">
           {/* Title */}
           <div className="space-y-2 md:space-y-4">
-            <h2 className="font-bold text-3xl lg:text-4xl text-blue-500">
+            <h2 className="font-bold text-3xl lg:text-4xl text-lightbluetext">
               join the premuim membership
             </h2>
            
@@ -294,7 +277,7 @@ const About = (props :any) => {
             <li className="flex space-x-3">
               {/* Solid Check */}
               <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-lightbluetext"
                 width={16}
                 height={16}
                 viewBox="0 0 16 16"
@@ -319,7 +302,7 @@ const About = (props :any) => {
             <li className="flex space-x-3">
               {/* Solid Check */}
               <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-lightbluetext"
                 width={16}
                 height={16}
                 viewBox="0 0 16 16"
@@ -344,7 +327,7 @@ const About = (props :any) => {
             <li className="flex space-x-3">
               {/* Solid Check */}
               <svg
-                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-blue-500"
+                className="flex-shrink-0 h-6 w-6 text-blue-600 dark:text-lightbluetext"
                 width={16}
                 height={16}
                 viewBox="0 0 16 16"
@@ -389,7 +372,7 @@ const About = (props :any) => {
             <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3481&q=80"
-              alt="Image Description"
+              alt="Image Description" width={100}height={100}
             />
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
@@ -408,7 +391,7 @@ const About = (props :any) => {
             <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-              alt="Image Description"
+              alt="Image Description" width={100}height={100}
             />
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
@@ -427,7 +410,7 @@ const About = (props :any) => {
             <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-              alt="Image Description"
+              alt="Image Description" width={100}height={100}
             />
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
@@ -446,7 +429,7 @@ const About = (props :any) => {
             <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1598929438701-ef29ab0bb61a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
-              alt="Image Description"
+              alt="Image Description" width={100}height={100}
             />
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
@@ -465,7 +448,7 @@ const About = (props :any) => {
             <Image
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl w-full object-cover"
               src="https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1019&q=80"
-              alt="Image Description"
+              alt="Image Description" width={100}height={100}
             />
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
@@ -489,9 +472,9 @@ const About = (props :any) => {
     <div className="mx-auto max-w-screen-md py-12 px-4 sm:px-6 md:max-w-screen-xl md:py-20 lg:py-32 md:px-8">
       <div className="md:pr-8 md:w-1/2 xl:pr-0 xl:w-5/12">
         {/* Title */}
-        <h1 className="text-3xl text-blue-500 font-bold md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight dark:text-gray-200">
+        <h1 className="text-3xl text-lightbluetext font-bold md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight dark:text-gray-200">
           Solving problems for every{" "}
-          <span className="text-blue-600 dark:text-blue-500">team</span>
+          <span className="text-blue-600 dark:text-lightbluetext">team</span>
         </h1>
         <p className="mt-3 text-base text-gray-500">
           
@@ -544,7 +527,7 @@ const About = (props :any) => {
             <input
               type="text"
               id="hs-hero-name-2"
-              className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+              className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-lightbluetext focus:ring-lightbluetext sm:p-4 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
               placeholder="Full name"
             />
           </div>
@@ -558,7 +541,7 @@ const About = (props :any) => {
             <input
               type="email"
               id="hs-hero-email-2"
-              className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+              className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-lightbluetext focus:ring-lightbluetext sm:p-4 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
               placeholder="Email address"
             />
           </div>
@@ -572,14 +555,14 @@ const About = (props :any) => {
             <input
               type="email"
               id="hs-hero-password-2"
-              className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 sm:p-4 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+              className="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-lightbluetext focus:ring-lightbluetext sm:p-4 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
               placeholder="Password"
             />
           </div>
           <div className="grid">
             <button
               type="submit"
-              className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800 sm:p-4"
+              className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-lightbluetext text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-lightbluetext focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800 sm:p-4"
             >
               Sign up
             </button>
@@ -685,7 +668,7 @@ const About = (props :any) => {
           >
             Careers
           </a>{" "}
-          <span className="inline text-blue-600 dark:text-blue-500">
+          <span className="inline text-blue-600 dark:text-lightbluetext">
             — We &apos; re hiring
           </span>
         </p>
@@ -792,7 +775,7 @@ const About = (props :any) => {
           >
             GitHub
           </a>{" "}
-          <span className="inline text-blue-600 dark:text-blue-500">— New</span>
+          <span className="inline text-blue-600 dark:text-lightbluetext">— New</span>
         </p>
       </div>
       <h4 className="mt-7 text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
@@ -883,7 +866,7 @@ const About = (props :any) => {
             aria-labelledby="footer-language-dropdown"
           >
             <a
-              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-lightbluetext dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
               href="#"
             >
               <svg
@@ -920,7 +903,7 @@ const About = (props :any) => {
               English (US)
             </a>
             <a
-              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-lightbluetext dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
               href="#"
             >
               <svg
@@ -936,7 +919,7 @@ const About = (props :any) => {
               Deutsch
             </a>
             <a
-              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-lightbluetext dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
               href="#"
             >
               <svg
@@ -952,7 +935,7 @@ const About = (props :any) => {
               Dansk
             </a>
             <a
-              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-lightbluetext dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
               href="#"
             >
               <svg
@@ -970,7 +953,7 @@ const About = (props :any) => {
               Italiano
             </a>
             <a
-              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+              className="flex items-center gap-x-2 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-lightbluetext dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
               href="#"
             >
               <svg
