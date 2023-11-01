@@ -108,7 +108,7 @@ const About = (props :any) => {
         </a>
       </div>
   
-      {/* End Buttons */}
+      {/* End Buttonsjj */}
     </div>
   </div>
   </Section>
